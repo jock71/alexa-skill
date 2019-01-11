@@ -19,32 +19,37 @@ from ask_sdk_model import Response
 # TODO: The items below this comment need your attention.
 # =========================================================================================================================================
 SKILL_NAME = "Fun Space Facts"
-GET_FACT_MESSAGE = "Here's your fact: "
+GET_FACT_MESSAGE = "Nicolò: "
 HELP_MESSAGE = "You can say tell me a space fact, or, you can say exit... What can I help you with?"
 HELP_REPROMPT = "What can I help you with?"
-STOP_MESSAGE = "Goodbye!"
+STOP_MESSAGE = "A presto!"
 FALLBACK_MESSAGE = "The Space Facts skill can't help you with that.  It can help you discover facts about space if you say tell me a space fact. What can I help you with?"
-FALLBACK_REPROMPT = 'What can I help you with?'
-EXCEPTION_MESSAGE = "Sorry. I cannot help you with that."
+FALLBACK_REPROMPT = 'Cosa posso fare per aiutarti?'
+EXCEPTION_MESSAGE = "Mi spiace, ma non so come aiutarti\."
 
 # =========================================================================================================================================
 # TODO: Replace this data with your own.  You can find translations of this data at http://github.com/alexa/skill-sample-python-fact/lambda/data
 # =========================================================================================================================================
 
 data = [
-  'A year on Mercury is just 88 days long.',
-  'Despite being farther from the Sun, Venus experiences higher temperatures than Mercury.',
-  'Venus rotates counter-clockwise, possibly because of a collision in the past with an asteroid.',
-  'On Mars, the Sun appears about half the size as it does on Earth.',
-  'Earth is the only planet not named after a god.',
-  'Jupiter has the shortest day of all the planets.',
-  'The Milky Way galaxy will collide with the Andromeda Galaxy in about 5 billion years.',
-  'The Sun contains 99.86% of the mass in the Solar System.',
-  'The Sun is an almost perfect sphere.',
-  'A total solar eclipse can happen once every 1 to 2 years. This makes them a rare event.',
-  'Saturn radiates two and a half times more energy into space than it receives from the sun.',
-  'The temperature inside the Sun can reach 15 million degrees Celsius.',
-  'The Moon is moving approximately 3.8 cm away from our planet every year.',
+  'ti sei lavato i denti?',
+  'hai preparato lo zaino per la scuola?',
+  'ti sei messo il pigiama?',
+  'ti sei lavato i piedi?',
+  'hai messo a posto la chitarra?',
+  'hai fatto tutti i compiti?',
+  'hai giocato un poco con la PS4?',
+  'quante carte del basket hai scambiato oggi?',
+  'ti sei ricordato di dare un bacio alla mamma? Ed al babbo?',
+  'è ora di andare a dormire',
+  'hai studiato musica?',
+  'parla anche con google',
+  'hai messo a posto i giochi',
+  'hai mangiato i popcorn?',
+  'la mamma ha altre figurine del basket!',
+  'hai chiamato il nonno?',
+  'hai chiamato le cuginette?',
+  'chiama la zia!'
 ]
 
 # =========================================================================================================================================
@@ -194,3 +199,4 @@ sb.add_exception_handler(CatchAllExceptionHandler())
 
 # Handler name that is used on AWS lambda
 lambda_handler = sb.lambda_handler()
+
