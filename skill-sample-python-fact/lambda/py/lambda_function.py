@@ -48,6 +48,7 @@ data = [
   'hai mangiato i popcorn?',
   'la mamma ha altre figurine del basket!',
   'hai chiamato il nonno?',
+  'hai esaurito i giga della mamma?',
   'hai chiamato le cuginette?',
   'chiama la zia!'
 ]
